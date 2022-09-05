@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roger Florez | Portafolio</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tarjetas3d.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tarjetas3d.css">
 </head>
 <body>
     <div class="tapa-video">
         <div class="img">
-            <img src="img/cover2.webp" alt="">
+            <img src="assets/img/cover2.webp" alt="">
         </div>
         <div class="title">
             <h2>Roger Florez</h2>
@@ -21,7 +20,7 @@
         </div>
     </div>
     <div class="video">
-        <video autoplay muted loop src="video/bg.mp4" type="video/mp4"></video>
+        <video autoplay muted loop src="assets/video/bg.mp4" type="video/mp4"></video>
     </div>
 
     <header>
@@ -50,7 +49,7 @@
                     <div class="container__card">
                         <div class="card__father">
                             <div class="card">
-                                <div class="card__front" style="background-image: url(img/projects/MyXENT.png);">
+                                <div class="card__front" style="background-image: url(assets/img/projects/MyXENT.png);">
                                     <div class="bg"></div>
                                     <div class="body__card_front">
                                         <h1>MyXENT</h1>
@@ -75,7 +74,7 @@
                         
                         <div class="card__father">
                             <div class="card">
-                                <div class="card__front" style="background-image: url(img/projects/wancolombia.png);">
+                                <div class="card__front" style="background-image: url(assets/img/projects/wancolombia.png);">
                                     <div class="bg"></div>
                                     <div class="body__card_front">
                                         <h2>WanColombia</h2>
@@ -98,7 +97,7 @@
                         
                         <div class="card__father">
                             <div class="card">
-                                <div class="card__front" style="background-image: url(img/projects/wancolombia2.png);">
+                                <div class="card__front" style="background-image: url(assets/img/projects/wancolombia2.png);">
                                     <div class="bg"></div>
                                     <div class="body__card_front">
                                         <h2>WanColombia2</h2>
@@ -131,35 +130,35 @@
                 <div class="icons">
                     <div class="img-icon">
                         <span class="txt">HTML</span>
-                        <img src="img/img-skills/html.png" alt="HTML">
+                        <img src="assets/img/img-skills/html.png" alt="HTML">
                     </div>
                     <div class="img-icon">
                         <span class="txt">CSS</span>
-                        <img src="img/img-skills/css.png" alt="CSS">
+                        <img src="assets/img/img-skills/css.png" alt="CSS">
                     </div>
                     <div class="img-icon">
                         <span class="txt">JavaScript</span>
-                        <img src="img/img-skills/js.webp" alt="JS">
+                        <img src="assets/img/img-skills/js.webp" alt="JS">
                     </div>
                     <div class="img-icon">
                         <span class="txt">SASS</span>
-                        <img src="img/img-skills/sass.png" alt="SASS">
+                        <img src="assets/img/img-skills/sass.png" alt="SASS">
                     </div>
                     <div class="img-icon">
                         <span class="txt">Bootstrap</span>
-                        <img src="img/img-skills/bootstrap.png" alt="Bootstrap">
+                        <img src="assets/img/img-skills/bootstrap.png" alt="Bootstrap">
                     </div>
                     <div class="img-icon">
                         <span class="txt">PHP</span>
-                        <img src="img/img-skills/php.png" alt="PHP">
+                        <img src="assets/img/img-skills/php.png" alt="PHP">
                     </div>
                     <div class="img-icon">
                         <span class="txt">Laravel</span>
-                        <img src="img/img-skills/Laravel.png" alt="Laravel">
+                        <img src="assets/img/img-skills/Laravel.png" alt="Laravel">
                     </div>
                     <div class="img-icon">
                         <span class="txt">MySQL</span>
-                        <img src="img/img-skills/mysql.png" alt="MySQL">
+                        <img src="assets/img/img-skills/mysql.png" alt="MySQL">
                     </div>
                 </div>
             </div>
@@ -201,12 +200,19 @@
             </div>
         </div>
         <footer>
+            <!-- Boton para volver arriba -->
+            <div id="button-up">
+                <em class="fas fa-chevron-up"></em>
+            </div>
+
             <p>
                 Developed and designed by Roger Florez. ©2022. All rights reserved.
             </p>
         </footer>
     </div>
+    <!-- Button-UP script -->
+    <script src="assets/js/buttonUP.js"></script>
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="js/formulario.js"></script>
 </body>
 </html>
