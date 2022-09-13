@@ -76,28 +76,24 @@
     padding: 40px;
     text-align: center;
     transform: translateZ(60px);
-    height: 100%;
 }
 
 .body__card_back p{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .body__card_back button{
     padding: 10px 40px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     color: #fff;
     background: #58B0F6;
     box-shadow: 1px 1px 30px -5px #58B0F6;
     border-radius: 10px;
-    transition: box-shadow 300ms;
-
-    position: absolute;
-    bottom: 60px;
-    left: 27%;
+    transition: box-shadow 600ms;
 }
 
 .body__card_back button:hover{
