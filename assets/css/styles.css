@@ -5,15 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Patrick Hand', cursive;
-}
-
-body{
-    background-image: url(../img/bg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .h2{
@@ -57,7 +49,7 @@ body{
 .tapa-video .img img{
     width: 100%;
     border-radius: 50%;
-    background-color: wheat;
+    background: #303030;
 }
 
 .tapa-video .title{
@@ -70,13 +62,13 @@ body{
 .tapa-video .title h2{
     color: white;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .tapa-video .title span{
     color: white;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 25px;
     
     /*Animacion del texto*/
     position: relative;
@@ -123,9 +115,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(236, 210, 163);
-    box-shadow: 0 4px 25px -22px black;
+    background: #1d1d1d;
 
+    box-shadow: 0 4px 25px -22px black;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -137,24 +129,54 @@ header{
 }
 
 .logo h2{
-    color: #000;
-    font-size: 18px;
+    color: #fff;
+    font-size: 19px;
     padding-left: 20px;
     font-weight: 100;
 }
 
 .logo h2 span{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 nav a{
-    font-weight: 600;
-    padding-left: 10px;
-    color: #000;
+    font-size: 17px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
-nav a:hover{
-    color: #f1f1f1;
+nav a:focus,
+nav a:hover {
+    color: #fff;
+}
+
+nav a:focus:after,
+nav a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+nav a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 @media (max-width:700px) {
@@ -165,6 +187,12 @@ nav a:hover{
 
     nav{
         padding: 10px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav{
+        font-size: 14px;
     }
 }
 
@@ -198,7 +226,9 @@ nav a:hover{
 .box .skills{
     width: 100%;
     height: auto;
-    background: rgba(236, 210, 163, 0.9);
+    background: #fff;
+    box-shadow: -1px 1px 25px -19px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
 }
 
 .box .skills .box-icons{
@@ -229,7 +259,7 @@ nav a:hover{
     padding: 6px 0;
     position: absolute;
     left: 40px;
-    background-color: black;
+    background: #1d1d1d;
     color: whitesmoke;
     text-align: center;
     border-radius: 6px;
@@ -260,6 +290,7 @@ nav a:hover{
 .box .about-me p{
     text-align: center;
     padding-top: 40px;
+    font-size: 20px;
 }
 
 /*--- -- ---------- -- ---*/
@@ -286,16 +317,18 @@ nav a:hover{
 .box .contact{
     width: 100%;
     height: auto;
-    background: #ecd2a3e6;
+    background: #b39b5a;
+    padding-top: 28px;
+
 }
 
 .box .contact .form{
     text-align: center;
-    padding: 100px 0 100px 0;
+    padding: 65px 0 80px 0;
 }
 
 button {
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -318,9 +351,9 @@ button.learn-more .circle {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #282936;
+    width: 3.1rem;
+    height: 3.1rem;
+    background: #1d1d1d;
     border-radius: 1.625rem;
 }
 
@@ -389,7 +422,7 @@ button:hover .button-text {
 #button-up{
     width: 60px;
     height: 60px;
-    background: radial-gradient(circle at top, #ecd2a3e6, white);
+    background: radial-gradient(circle at top, #b39b5a, #fff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,7 +441,7 @@ button:hover .button-text {
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, .1);
-    background: radial-gradient(circle at top, white, #ecd2a3e6);
+    background: radial-gradient(circle at top, #fff, #b39b5a);
 }
 
 /*--- -- ------ -- ---*/
@@ -417,14 +450,17 @@ button:hover .button-text {
 
 footer{
     width: 100%;
-    height: 100px;
-    background-color: #2b2b2b;
+    height: 80px;
+    background: #1d1d1d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
-    padding-top: 50px;
     color: #f1f1f1;
 }
 
@@ -436,7 +472,7 @@ footer p{
     position: relative;
     width: 110px;
     height: 30px;
-    background: #B39C6F;
+    background: #1d1d1d;
     border-radius: 100px;
 }
 
@@ -447,9 +483,9 @@ footer p{
     left: 10px;
     width: 30px;
     height: 30px;
-    background: #B39C6F;
+    background: #1d1d1d;
     border-radius: 50%;
-    box-shadow: 40px 0 0 20px #B39C6F;
+    box-shadow: 40px 0 0 20px #1d1d1d;
 }
 
 .snow {
@@ -460,9 +496,9 @@ footer p{
 
 .snow span {
     position: relative;
-    width: 3px;
-    height: 3px;
-    background: #B39C6F;
+    width: 5px;
+    height: 5px;
+    background: #1d1d1d;
     margin: 0 2px;
     border-radius: 50%;
     animation: snowing 5s linear infinite;
