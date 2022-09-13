@@ -149,12 +149,40 @@ header{
 
 nav a{
     font-weight: 600;
-    padding-left: 10px;
+    margin-left: 10px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+nav a:focus,
+nav a:hover {
     color: #000;
 }
 
-nav a:hover{
-    color: #f1f1f1;
+nav a:focus:after,
+nav a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+nav a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 @media (max-width:700px) {
@@ -165,6 +193,12 @@ nav a:hover{
 
     nav{
         padding: 10px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav{
+        font-size: 14px;
     }
 }
 
