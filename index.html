@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/tarjetas3d.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -57,9 +61,9 @@
     </div>
 
     <header>
-        <a href="#" class="logo">
+        <div class="logo">
             <h2>Roger Florez <span>Desarrollador Web</span></h2>
-        </a>
+        </div>
         <div>
             <nav>
                 <a href="#portafolio" class="nav-link">Portafolio</a>
@@ -133,12 +137,12 @@
                                 <div class="card__front" style="background-image: url(assets/img/projects/wancolombia2.png);">
                                     <div class="bg"></div>
                                     <div class="body__card_front">
-                                        <h2>WanColombia2</h2>
+                                        <h2>Proyecto</h2>
                                     </div>
                                 </div>
                                 <div class="card__back">
                                     <div class="body__card_back">
-                                        <h1>WanColombia2</h1>
+                                        <h1>Proyecto</h1>
                                         <p>Esta pagina fue una de mis primeras en la que con un grupo
                                             de compañeros creamos una pagina propia donde mostraramos
                                             toda la información de nuestra Universidad.
@@ -246,16 +250,26 @@
                 <p>No hay nada que ver por aquí... <br> por ahora!</p>
             </div>
         </div>
+
         <div class="contact" id="contact">
             <div class="line">
                 <hr>
             </div>
             <h2 class="h2">CONTACTAME</h2>
             <div class="form">
-                <a href="mailto:xeng_xg@hotmail.com">
+                <!-- <a href="mailto:xeng_xg@hotmail.com">
                     <button type="submit">Enviar un correo</button>
+                </a> -->
+                <a href="mailto:xeng_xg@hotmail.com">
+                    <button type="submit" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Enviar un correo</span>
+                    </button>
                 </a>
             </div>
+
         </div>
         <footer>
             <!-- Boton para volver arriba -->
