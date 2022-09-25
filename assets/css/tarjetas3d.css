@@ -1,29 +1,48 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container__card{
     max-width: 1200px;
     margin: auto;
     padding: 50px 0 50px 0;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .card__father{
     margin: 20px;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
 }
 
 .card__father:hover .card{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .card{
     width: 350px;
     height: 400px;
     position: relative;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
     transition: all 600ms;
-    box-shadow: 0 4px 35px -22px black;
+    -webkit-box-shadow: 0 4px 35px -22px black;
+            box-shadow: 0 4px 35px -22px black;
     border-radius: 20px;
 }
 
@@ -39,13 +58,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     border-radius: 20px;
 }
 
 .card__back{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     background: white;
 }
 
@@ -54,12 +76,19 @@
     height: 100%;
     text-align: center;
     padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #fff;
     position: relative;
-    transform: translateZ(60px);
+    -webkit-transform: translateZ(60px);
+            transform: translateZ(60px);
 }
 
 .bg{
@@ -75,7 +104,8 @@
 .body__card_back{
     padding: 40px;
     text-align: center;
-    transform: translateZ(60px);
+    -webkit-transform: translateZ(60px);
+            transform: translateZ(60px);
     height: 100%;
 }
 
@@ -95,9 +125,10 @@
     
     color: #fff;
     overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 
     position: absolute;
@@ -107,15 +138,15 @@
 
 .body__card_back button:hover {
     background: rgb(61, 106, 255);
-    box-shadow: 0 0 20px 5px #008eecd0;
+    -webkit-box-shadow: 0 0 20px 5px #008eecd0;
+            box-shadow: 0 0 20px 5px #008eecd0;
     -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .body__card_back button:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
@@ -129,12 +160,27 @@
     left: 0%;
     opacity: 0;
     background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
+    -webkit-box-shadow: 0 0 50px 30px #fff;
+            box-shadow: 0 0 50px 30px #fff;
     -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
     -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
+}
+
+@-webkit-keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
 }
 
 @keyframes sh02 {
@@ -154,8 +200,12 @@
 }
 
 .body__card_back button:active {
-    box-shadow: 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+    transition: -webkit-box-shadow 0.2s ease-in;
+    -o-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
 }
