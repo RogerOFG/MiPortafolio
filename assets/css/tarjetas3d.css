@@ -1,48 +1,29 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .container__card{
     max-width: 1200px;
     margin: auto;
     padding: 50px 0 50px 0;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    perspective: 1000px;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card__father{
     margin: 20px;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
+    perspective: 1000px;
 }
 
 .card__father:hover .card{
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .card{
     width: 350px;
     height: 400px;
     position: relative;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: all 600ms;
-    -o-transition: all 600ms;
+    transform-style: preserve-3d;
     transition: all 600ms;
-    -webkit-box-shadow: 0 4px 35px -22px black;
-            box-shadow: 0 4px 35px -22px black;
+    box-shadow: 0 4px 35px -22px black;
     border-radius: 20px;
 }
 
@@ -58,16 +39,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     border-radius: 20px;
 }
 
 .card__back{
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
     background: white;
 }
 
@@ -76,19 +54,12 @@
     height: 100%;
     text-align: center;
     padding: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     position: relative;
-    -webkit-transform: translateZ(60px);
-            transform: translateZ(60px);
+    transform: translateZ(60px);
 }
 
 .bg{
@@ -104,8 +75,7 @@
 .body__card_back{
     padding: 40px;
     text-align: center;
-    -webkit-transform: translateZ(60px);
-            transform: translateZ(60px);
+    transform: translateZ(60px);
     height: 100%;
 }
 
@@ -114,7 +84,7 @@
     font-size: 18px;
 }
 
-.body__card_back button {
+.body__card_back a {
     padding: 10px 40px;
     border-radius: 10px;
     font-size: 14px;
@@ -125,10 +95,9 @@
     
     color: #fff;
     overflow: hidden;
-    -webkit-box-shadow: 0 0 0 0 transparent;
-            box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
     -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 
     position: absolute;
@@ -136,21 +105,21 @@
     left: 24%;
 }
 
-.body__card_back button:hover {
+.body__card_back a:hover {
     background: rgb(61, 106, 255);
-    -webkit-box-shadow: 0 0 20px 5px #008eecd0;
-            box-shadow: 0 0 20px 5px #008eecd0;
+    box-shadow: 0 0 20px 5px #008eecd0;
     -webkit-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
-.body__card_back button:hover::before {
+.body__card_back a:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
-.body__card_back button::before {
+.body__card_back a::before {
     content: '';
     display: block;
     width: 0px;
@@ -160,27 +129,12 @@
     left: 0%;
     opacity: 0;
     background: #fff;
-    -webkit-box-shadow: 0 0 50px 30px #fff;
-            box-shadow: 0 0 50px 30px #fff;
+    box-shadow: 0 0 50px 30px #fff;
     -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
     -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
-}
-
-@-webkit-keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        left: 100%;
-    }
 }
 
 @keyframes sh02 {
@@ -199,13 +153,9 @@
     }
 }
 
-.body__card_back button:active {
-    -webkit-box-shadow: 0 0 0 0 transparent;
-            box-shadow: 0 0 0 0 transparent;
+.body__card_back a:active {
+    box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
-    -webkit-transition: -webkit-box-shadow 0.2s ease-in;
-    transition: -webkit-box-shadow 0.2s ease-in;
-    -o-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
 }
