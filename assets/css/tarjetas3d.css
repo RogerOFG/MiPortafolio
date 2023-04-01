@@ -18,8 +18,8 @@
 }
 
 .card{
-    width: 350px;
-    height: 400px;
+    width: 370px;
+    height: 260px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
@@ -92,7 +92,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     background: #58B0F6;
-    
+
     color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
@@ -101,7 +101,7 @@
     transition: all 0.2s ease-in;
 
     position: absolute;
-    bottom: 60px;
+    bottom: 45px;
     left: 24%;
 }
 
