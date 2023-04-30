@@ -18,8 +18,8 @@
 }
 
 .card{
-    width: 370px;
-    height: 260px;
+    width: 350px;
+    height: 300px;
     position: relative;
     transform-style: preserve-3d;
     transition: all 600ms;
@@ -92,7 +92,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     background: #58B0F6;
-
+    
     color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
@@ -101,7 +101,7 @@
     transition: all 0.2s ease-in;
 
     position: absolute;
-    bottom: 45px;
+    bottom: 60px;
     left: 24%;
 }
 
@@ -153,7 +153,7 @@
     }
 }
 
-.body__card_back a:active {
+.body__card_back button:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
