@@ -89,7 +89,7 @@ export default function Home() {
         <div className="flex gap-8 mt-8 text-[#1b1e1d] font-[500] max-[450px]:gap-4 max-[450px]:grid max-[450px]:grid-cols-2">
           <a 
             className="py-1 px-4 rounded-full text-white bg-[#1b1e1d] border border-whie hover:bg-white hover:border-[#1b1e1d] hover:text-[#1b1e1d] duration-100 ease-in max-[450px]:col-span-2"
-            href="/CV/HOJA-DE-VIDA.pdf"
+            href="CV/HOJA-DE-VIDA.pdf"
             download="HojaDeVida-RogerFlorez.pdf"
           >
             <i className="bi bi-file-earmark-arrow-down-fill"></i> Descargar CV
@@ -185,7 +185,7 @@ export default function Home() {
             <h3 className="text-sky-200">Sobre mí</h3>
             <h2 className="text-2xl">Roger Florez</h2>
 
-            <div className="flex justify-between gap-[80px] mt-8 max-[900px]:flex-col max-[900px]:gap-[40px] max-[900px]:justify-center max-[450px]:gap-10 max-[450px]:mt-4">
+            <div className="flex justify-between items-start gap-[80px] mt-8 max-[900px]:flex-col max-[900px]:gap-[40px] max-[900px]:justify-center max-[450px]:gap-10 max-[450px]:mt-4">
               <div className="w-2/4 max-[900px]:w-full">
               <p className="pb-4 leading-6 text-lg">Ingeniero de Sistemas enfocado en el desarrollo web, buscando adquirir experiencia en el campo empresarial.</p>
                 <p className="pb-4 leading-6 text-lg">Me considero una persona con gran capacidad para seguir instrucciones, con buena gestión del tiempo y excelentes habilidades de organización, disposición para el trabajo en equipo, paciente, abierto a nuevos aprendizajes y buena capacidad de concentración.</p>
