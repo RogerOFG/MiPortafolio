@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       
         {/* Botones redes */}
-        <div className="flex gap-8 mt-8 text-[#1b1e1d] font-[500] max-[450px]:gap-4 max-[450px]:grid max-[450px]:grid-cols-2">
+        <div className="flex gap-8 mt-8 text-[#1b1e1d] font-[500] text-center max-[450px]:gap-4 max-[450px]:grid max-[450px]:grid-cols-2">
           <a 
             className="py-1 px-4 rounded-full text-white bg-[#1b1e1d] border border-whie hover:bg-white hover:border-[#1b1e1d] hover:text-[#1b1e1d] duration-100 ease-in max-[450px]:col-span-2"
             href="CV/HOJA-DE-VIDA.pdf"
