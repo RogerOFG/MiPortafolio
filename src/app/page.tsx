@@ -63,8 +63,8 @@ const skillses = [
   },
   {
     title: 'Herramientas',
-    nameS: ['VSCode', 'Figma', 'AdobeXD'],
-    patchS: ['img/img-skills/VSCode.png', 'img/img-skills/Figma.webp', 'img/img-skills/AdobeXD.png']
+    nameS: ['VSCode', 'Figma', 'AdobeXD', 'XAMPP'],
+    patchS: ['img/img-skills/VSCode.png', 'img/img-skills/Figma.webp', 'img/img-skills/AdobeXD.png', 'img/img-skills/XAMPP.svg']
   }
 ];
 
