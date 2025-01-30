@@ -1,4 +1,7 @@
-import { AboutMe, Projects, Skills } from './components'
+// Components
+import { Projects } from "./components/Projects";
+import { AboutMe } from "./components/AboutMe";
+import { Skills } from "./components/Skills";
 
 // Agregar el "/" para probar localmente, quitar el "/" antes de subirlo al repositorio
 const patch = 'img'; 

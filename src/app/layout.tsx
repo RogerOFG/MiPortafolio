@@ -1,7 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { barlowSC } from "./ui/fonts";
-import { Header } from "./components"
+
+// Component
+import { Header } from "./components/Header";
 
 // Agregar el "/" para probar localmente, quitar el "/" antes de subirlo al repositorio
 const patch = 'img'; 
