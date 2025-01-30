@@ -3,6 +3,9 @@ import "./globals.css";
 import { barlowSC } from "./ui/fonts";
 import Image from "next/image";
 
+// Agregar el "/" para probar localmente, quitar el "/" antes de subirlo al repositorio
+const patch = 'img'; 
+
 export const metadata: Metadata = {
   title: "Roger Florez | Frontend Developer",
   description: "Este es mi portafolio personal, donde muestro mis habilidades como desarrollador frontend.",
@@ -22,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
             <div className="flex items-center space-x-4">
               {/* Cuadro para foto */}
               <div className="w-[38px] h-[38px] rounded-full bg-white overflow-hidden">
-                <Image src="img/me.jpg" alt="Roger" width={100} height={100} />
+                <Image src={`${patch}/me.jpg`} alt="Roger" width={100} height={100} />
               </div>
 
               {/* Nombre y profesión */}
