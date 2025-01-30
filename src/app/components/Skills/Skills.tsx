@@ -4,7 +4,7 @@ interface SkillsProps {
   patch: string;
 }
 
-export default function Skills({ patch }: SkillsProps) {
+export const Skills = ({ patch }: SkillsProps) => {
   const skillses = [
     {
       title: 'Frontend',

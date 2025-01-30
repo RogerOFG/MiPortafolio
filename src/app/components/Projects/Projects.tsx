@@ -4,7 +4,7 @@ interface ProjectsProps {
   patch: string;
 }
 
-export default function Projects({ patch }: ProjectsProps) {
+export const Projects = ({ patch }: ProjectsProps) => {
   const projects = [
     {
       name: 'ShopXeng',

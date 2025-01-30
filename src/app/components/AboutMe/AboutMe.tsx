@@ -1,4 +1,4 @@
-export default function Componente() {
+export const AboutMe = () => {
   return (
     <div className="py-16 max-sm:py-[105px]" id="about-me">
       <h3 className="text-sky-200">Sobre mí</h3>
