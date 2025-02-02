@@ -28,7 +28,7 @@ export const Projects = ({ patch }: ProjectsProps) => {
       link: 'https://rogerofg.github.io/MYXENT/',
       code: 'https://github.com/RogerOFG/MYXENT',
       image: `${patch}/projects/MyXENT.png`,
-      skills: ['NEXT.JS', 'HTML', 'CSS'],
+      skills: ['NEXT.JS', 'TailwindCSS', 'CSS'],
     },
     {
       name: 'IED San Gabriel',
