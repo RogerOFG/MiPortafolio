@@ -24,11 +24,11 @@ export const Projects = ({ patch }: ProjectsProps) => {
     },
     {
       name: 'MyXENT',
-      description: 'Es un blog diseñado con HTML, CSS y JavaScript.',
+      description: 'Es un blog diseñado con Next.js, HTML y CSS.',
       link: 'https://rogerofg.github.io/MYXENT/',
       code: 'https://github.com/RogerOFG/MYXENT',
       image: `${patch}/projects/MyXENT.png`,
-      skills: ['HTML', 'CSS', 'JS'],
+      skills: ['NEXT.JS', 'HTML', 'CSS'],
     },
     {
       name: 'IED San Gabriel',
