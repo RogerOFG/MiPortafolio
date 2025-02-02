@@ -25,8 +25,8 @@ export const Projects = ({ patch }: ProjectsProps) => {
     {
       name: 'MyXENT',
       description: 'Es un blog diseñado con HTML, CSS y JavaScript.',
-      link: 'https://rogerofg.github.io/MYXENG/',
-      code: 'https://github.com/RogerOFG/MYXENG',
+      link: 'https://rogerofg.github.io/MYXENT/',
+      code: 'https://github.com/RogerOFG/MYXENT',
       image: `${patch}/projects/MyXENT.png`,
       skills: ['HTML', 'CSS', 'JS'],
     },
