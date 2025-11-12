@@ -9,7 +9,7 @@ export const Projects = ({ patch }: ProjectsProps) => {
     {
       name: 'ShopXeng',
       description: 'Tienda en línea de relojes realizada con Laravel, CSS y JavaScript.',
-      link: 'https://www.shopxeng.com/',
+      link: 'https://www.shopxeng.store/',
       code: 'https://github.com/RogerOFG/Ecommerce-con-Laravel',
       image: `${patch}/projects/shopxeng.png`,
       skills: ['Laravel', 'CSS', 'JS'],
