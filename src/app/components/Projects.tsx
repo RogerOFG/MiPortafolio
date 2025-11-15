@@ -31,6 +31,14 @@ export const Projects = ({ patch }: ProjectsProps) => {
       skills: ['NEXT.JS', 'TailwindCSS', 'CSS'],
     },
     {
+      name: 'Brikk',
+      description: 'Modelo landing pages de agencia de marketing para agentes inmobiliarios diseñada con HTML y TailwindCSS.',
+      link: 'https://rogerofg.github.io/LandingPage-AgenciaMarketing/',
+      code: 'https://github.com/RogerOFG/LandingPage-AgenciaMarketing',
+      image: `${patch}/projects/Brikk.png`,
+      skills: ['HTML', 'TailwindCSS', 'CSS'],
+    },
+    {
       name: 'IED San Gabriel',
       description:
         'Espacio virtual para la IED San Gabriel. Diseñada con HTML, PHP, JavaScript, CSS, Bootstrap e integración de una base de datos con MySQL.',
