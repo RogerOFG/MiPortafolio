@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       {/* Inicio */}
-      <div className="flex flex-col items-center justify-center min-h-[400px] py-2 bg-[#00000021]">
+      <div className="flex flex-col items-center justify-center min-h-[400px] py-2">
         <div className="w-[404px] leading-[1.2] pb-10 max-[450px]:w-[90%]">
           <h1 className="text-[40px] font-semibold max-[450px]:text-[35px]">Hola, <span className="text-sky-200">soy Roger</span></h1>
           <p>Desarrolador Frontend</p>

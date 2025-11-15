@@ -47,6 +47,7 @@ export const Skills = ({ patch }: SkillsProps) => {
                       width={40}
                       height={30}
                       layout="intrinsic"
+                      className="pointer-events-none"
                     />
                   </div>
 

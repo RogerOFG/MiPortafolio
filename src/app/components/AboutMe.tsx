@@ -9,7 +9,7 @@ export const AboutMe = () => {
           <p className="pb-4 leading-6 text-lg">Ingeniero de Sistemas enfocado en el desarrollo web, buscando adquirir experiencia en el campo empresarial.</p>
           <p className="pb-4 leading-6 text-lg">Me considero una persona con gran capacidad para seguir instrucciones, con buena gestión del tiempo y excelentes habilidades de organización, disposición para el trabajo en equipo, paciente, abierto a nuevos aprendizajes y buena capacidad de concentración.</p>
           <p className="pb-4 leading-6 text-lg">¡Aquí podras encontrar algunos de mis proyectos con los que he estado trabajando y practicando!</p>
-          <p className="leading-6 text-lg">Actualmente tengo 23 años y vivo en Barranquilla/Colombia.</p>
+          <p className="leading-6 text-lg">Actualmente tengo 24 años y vivo en Barranquilla/Colombia.</p>
         </div>
 
         <div className="max-w-[412px] w-full p-5 rounded-lg bg-[#1b1e1d] max-[900px]:m-auto max-[900px]:max-w-full">
