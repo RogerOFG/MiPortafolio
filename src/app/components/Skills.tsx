@@ -13,8 +13,8 @@ export const Skills = ({ patch }: SkillsProps) => {
     },
     {
       title: 'Backend',
-      nameS: ['PHP', 'Laravel', 'MySQL'],
-      patchS: [`${patch}/img-skills/PHP.png`, `${patch}/img-skills/Laravel.png`, `${patch}/img-skills/MySQL.png`]
+      nameS: ['PHP', 'Laravel', 'MySQL', 'PostgreSQL'],
+      patchS: [`${patch}/img-skills/PHP.png`, `${patch}/img-skills/Laravel.png`, `${patch}/img-skills/MySQL.png`, `${patch}/img-skills/Postgresql.webp`]
     },
     {
       title: 'Aprendiendo',
@@ -23,8 +23,8 @@ export const Skills = ({ patch }: SkillsProps) => {
     },
     {
       title: 'Herramientas',
-      nameS: ['VSCode', 'Figma', 'AdobeXD', 'XAMPP'],
-      patchS: [`${patch}/img-skills/VSCode.png`, `${patch}/img-skills/Figma.webp`, `${patch}/img-skills/AdobeXD.png`, `${patch}/img-skills/XAMPP.svg`]
+      nameS: ['VSCode', 'Figma', 'AdobeXD', 'XAMPP', 'n8n', 'Docker'],
+      patchS: [`${patch}/img-skills/VSCode.png`, `${patch}/img-skills/Figma.webp`, `${patch}/img-skills/AdobeXD.png`, `${patch}/img-skills/XAMPP.svg`, `${patch}/img-skills/n8n.webp`, `${patch}/img-skills/Docker.webp`]
     }
   ];
 
